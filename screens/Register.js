@@ -9,6 +9,10 @@ const Register = ({navigation}) => {
     const [username, setusername]= useState("");
 
 const Login=()=>{
+    if (username.length==0 ||password.length==0 ||email.length==0) {
+        alert("Required field missing");
+    }
+    else 
     navigation.navigate("Login");
 }
 
